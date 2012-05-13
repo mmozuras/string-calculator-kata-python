@@ -5,4 +5,5 @@ def describe_string_calculator():
     assert add('') == 0
 
   def returns_bare_numbers():
+    assert add('0') == 0
     assert add('1') == 1
