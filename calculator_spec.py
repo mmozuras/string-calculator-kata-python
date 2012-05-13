@@ -26,3 +26,4 @@ def describe_string_calculator():
 
     def rejects_negative_numbers():
       assert raises(ValueError, add, '-1')
+      assert raises(ValueError, add, '1,-2')

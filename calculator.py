@@ -1,5 +1,5 @@
 def add(string):
-  if string.startswith('-'):
+  if '-' in string:
     raise ValueError
   string = _normalize_delimiters(string)
   if string:
