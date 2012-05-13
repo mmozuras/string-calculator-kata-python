@@ -19,3 +19,7 @@ def describe_string_calculator():
     def can_be_custom():
       assert add('//;\n1;2') == 3
       assert add('//+\n1+10') == 11
+      assert add('//abc\n1abc2abc3')
+
+    def can_be_mixed():
+      assert add('//;\n1,2;3\n4') == 10

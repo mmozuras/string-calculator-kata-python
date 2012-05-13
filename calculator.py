@@ -12,8 +12,8 @@ def _normalize_delimiters(string):
 
 def _normalize_custom_delimiter(string):
   if string.startswith('//'):
-    delimiter = string[2]
-    string = string[4:]
+    delimiter_spec, string = string.split('\n', 1)
+    delimiter = delimiter_spec[2:]
     string = string.replace(delimiter, ',')
   return string
 
