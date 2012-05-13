@@ -7,3 +7,6 @@ def describe_string_calculator():
   def returns_bare_numbers():
     assert add('0') == 0
     assert add('1') == 1
+
+  def adds_numbers():
+    assert add('1,2') == 3
