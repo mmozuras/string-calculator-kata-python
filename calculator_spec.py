@@ -11,3 +11,7 @@ def describe_string_calculator():
   def adds_numbers():
     assert add('1,2') == 3
     assert add('1,10') == 11
+
+  def describe_delimiters():
+    def can_be_newlines():
+      assert add('1\n2') == 3
