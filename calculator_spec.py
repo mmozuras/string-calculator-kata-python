@@ -24,6 +24,9 @@ def describe_string_calculator():
     def can_be_mixed():
       assert add('//;\n1,2;3\n4') == 10
 
+    def can_be_minus_signs():
+      assert add('//-\n1-2') == 3
+
     def rejects_negative_numbers():
       assert raises(ValueError, add, '-1')
       assert raises(ValueError, add, '1,-2')

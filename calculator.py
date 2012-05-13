@@ -1,6 +1,4 @@
 def add(string):
-  if '-' in string:
-    raise ValueError
   string = _normalize_delimiters(string)
   if string:
     return _add_numbers_in_string(string)
@@ -20,4 +18,7 @@ def _normalize_custom_delimiter(string):
   return string
 
 def _add_numbers_in_string(string):
-  return sum(map(int, string.split(',')))
+  numbers = map(int, string.split(','))
+  if any(number < 0 for number in numbers):
+    raise ValueError
+  return sum(numbers)
