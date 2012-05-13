@@ -1,6 +1,5 @@
 def add(string):
-  if '\n' in string;
-    return 3
+  string = string.replace('\n', ',')
   if string:
     return _add_numbers_in_string(string)
   else:
