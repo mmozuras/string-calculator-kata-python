@@ -10,3 +10,4 @@ def describe_string_calculator():
 
   def adds_numbers():
     assert add('1,2') == 3
+    assert add('1,10') == 11
