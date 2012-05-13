@@ -23,3 +23,6 @@ def describe_string_calculator():
 
     def can_be_mixed():
       assert add('//;\n1,2;3\n4') == 10
+
+    def rejects_negative_numbers():
+      assert raises(ValueError, add, '-1')

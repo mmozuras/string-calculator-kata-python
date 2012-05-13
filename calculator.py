@@ -1,4 +1,6 @@
 def add(string):
+  if string.startswith('-'):
+    raise ValueError
   string = _normalize_delimiters(string)
   if string:
     return _add_numbers_in_string(string)
