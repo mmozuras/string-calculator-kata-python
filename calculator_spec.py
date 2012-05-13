@@ -18,3 +18,4 @@ def describe_string_calculator():
 
     def can_be_custom():
       assert add('//;\n1;2') == 3
+      assert add('//+\n1+10') == 11

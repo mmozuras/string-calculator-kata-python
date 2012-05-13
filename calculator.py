@@ -1,6 +1,8 @@
 def add(string):
   if string.startswith('//'):
-    return 3
+    delimiter = string[2]
+    string = string[4:]
+    string = string.replace(delimiter, ',')
   string = string.replace('\n', ',')
   if string:
     return _add_numbers_in_string(string)
