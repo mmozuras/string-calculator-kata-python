@@ -1,0 +1,2 @@
+def add(string):
+  pass
