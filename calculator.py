@@ -1,2 +1,2 @@
 def add(string):
-  pass
+  return 0
