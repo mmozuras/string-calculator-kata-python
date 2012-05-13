@@ -15,3 +15,6 @@ def describe_string_calculator():
   def describe_delimiters():
     def can_be_newlines():
       assert add('1\n2') == 3
+
+    def can_be_custom():
+      assert add('//;\n1;2') == 3
